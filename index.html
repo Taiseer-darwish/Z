@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Z</title>
+  <!-- Main templet CSS Fail -->
+  <link rel="stylesheet" href="css/Z.css">
+  <!-- normalize -->
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <!-- Font Awesome-->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!--Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Start Header -->
+  <div class="container">
+    <div class="header">
+      <div class="logo"><img src="./img-Z/OIG-2.M-removebg-preview.png" alt=""></div>
+      <i onclick="location.reload()" class="fa-solid fa-rotate-right"></i>
+    </div>
+      <!-- End Header -->
+      <!-- Start text -->
+    <div class="text-1">
+      <h2 id="datetime"></h2>
+      <P>يمكنك عمل اوردر من خلال موقنا الحالي عن طريق التواصل معنا </P>
+      <a href="https://wa.me/201119648358">اضغط للتواصل </a>
+    </div>
+      <!-- End text -->
+      <!-- Start grid -->
+    <div class="grid">
+      <div class="one">
+        <h2>سعر البنك</h2>
+      </p></div>
+      <div class="two">
+        <h2>سعر الموقع </h2>
+      </div>
+      <div class="three">
+        <h2> العملة</h2>
+      </div>
+      <!-- B -->
+      <div class="B-24">30.93</div>
+      <div class="B-22">40.17</div>
+      <div class="B-21">34.42</div>
+      <div class="B-18">8.24</div>
+      <div class="B-14">8.49</div>
+      <div class="B-12">8.42</div>
+      <div class="B-g-d">100.86</div>
+      <div class="B-dollar">82.06</div>
+      <div class="B-onsa">23.45</div>
+      <!-- SH -->
+      <div class="sh-24">38.00</div>
+      <div class="sh-22">49.54</div>
+      <div class="sh-21">42.26</div>
+      <div class="sh-18">10.18</div>
+      <div class="sh-14">9.94</div>
+      <div class="sh-12">10.45</div>
+      <div class="sh-g-d">121.62</div>
+      <div class="sh-dollar">99.92</div>
+      <div class="sh-onsa">28.85</div>
+      <!--  G -->
+      <div class="G-24">الدولار  </div>
+      <div class="G-22">الجنيه الأسترليني  </div>
+      <div class="G-21">اليورو</div>
+      <div class="G-18">الريال السعودي</div>
+      <div class="G-14">الريال القطري</div>
+      <div class="G-12">الدرهم الاماراتي </div>
+      <div class="G-g-d"> الدينار الكويتي</div>
+      <div class="G-dollar"> الدينار البحريني </div>
+      <div class="G-onsa">الدولار الكندي</div>
+    </div>
+      <!-- End grid -->
+      <!-- Start text-calc -->
+      <div class="text-calc">
+        <p class="text-calc-1"> لحساب المبغ عند التحويل من اي عمله اخري الي الجنيه المصري  </p>
+      </div>
+      <!-- End text-calc -->
+      <!-- Start calc -->
+      <div class="calculater">
+        <div class="Boxs">
+          <div class="Box-1">
+            <div class="box " name="m-a-f" id="z" >
+              <h3 class="real">جنيه مصري   </h3>
+            </div>
+          </div>    
+        </div>
+        <div class="Boxs">
+          <div class="Box-2">
+            <select class="box"  id="gold-option" >
+              <option value="----" class="o-24">اختر العملة</option>
+              <option value="38.00" class="o-22"> دولار  </option>
+              <option value="49.54" class="o-21">  الجنيه الأسترليني </option>
+              <option value="42.26" class="o-18"> اليورو  </option>
+              <option value="10.18" class="o-14">الريال السعودي</option>
+              <option value="9.94" class="o-12"> الريال القطري  </option>
+              <option value="10.45" class="bound-gold">  الدرهم الاماراتي</option>
+              <option value="121.62" class="s3r-dollar"> الدينار الكويتي </option>
+              <option value="99.92" class="onsa"> الدينار البحريني </option>
+              <option value="28.85" class="onsa"> الدولار الكندي </option>
+         </select>
+          </div>
+        </div>
+        <div class="Boxs">
+          <div class="Box-3">
+            <div id="result"></div>
+          </div>
+        </div>
+        <div class="Boxs">
+          <div class="Box-4">
+            <input  onkeyup="getResult()" id="geram" type="number" placeholder="ادخل المبلغ  ">
+          </div>
+        </div>
+      </div>
+      <div class="text-calc">
+        <p> لحساب المبلغ عند التحويل من جنيه مصري الي اي عملة اخري  </p>
+      </div>
+      <div class="calculater">
+        <div class="Boxs">
+          <div class="Box-1">
+            <select class="box"  id="gold-optionZ" >
+              <option value="----" class="o-24">اختر العملة</option>
+              <option value="38.00" class="o-22"> دولار  </option>
+              <option value="49.54" class="o-21">  الجنيه الأسترليني </option>
+              <option value="42.26" class="o-18"> اليورو  </option>
+              <option value="10.18" class="o-14">الريال السعودي</option>
+              <option value="9.94" class="o-12"> الريال القطري  </option>
+              <option value="10.45" class="bound-gold">  الدرهم الاماراتي</option>
+              <option value="121.62" class="s3r-dollar"> الدينار الكويتي </option>
+              <option value="99.92" class="onsa"> الدينار البحريني </option>
+              <option value="28.85" class="onsa"> الدولار الكندي </option>
+         </select>
+          </div>    
+        </div>
+        <div class="Boxs">
+          <div class="Box-2">
+            <div class="box " name="m-a-f" id="z" >
+              <h3 class="real">جنيه مصري   </h3>
+            </div>
+          </div>
+        </div>
+        <div class="Boxs">
+          <div class="Box-3">
+            <div id="resultZ"></div>
+          </div>
+        </div>
+        <div class="Boxs">
+          <div class="Box-4">
+            <input  onkeyup="getResultZ()" id="geramZ" type="number" placeholder="ادخل المبلغ  ">
+          </div>
+        </div>
+      </div>
+</div>
+|<!--File-Js -->
+<script src="Z.js" >  </script>
+</body>
+</html>
