@@ -54,6 +54,7 @@ body {
   animation-iteration-count:unset;
   animation-timing-function: linear;
   animation-play-state: paused ;
+  animation-play-state: running;
 }
   @keyframes i {
     fonm{
@@ -63,9 +64,6 @@ body {
     to{
         transform: rotate(0.5turn);
     }
-}
-.header i:hover{
-    animation-play-state: running;
 }
 .text-1{
   text-align: center;
